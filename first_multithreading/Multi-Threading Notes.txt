@@ -1,0 +1,8 @@
+Multi-Threading Notes:
+- Multithreading allows your computer to perform actions in parallel, utilizing multiple cores/ multiple CPUs present on your system.
+- Thread scheduling algorithm can swap between threads at any time and you don't know which thread will execute first. This scenario is called "race condition".
+- import threading
+- Lock Objects: Most basic synchronzation primitive which is not owned by a particular thread when locked. It doesnt keep info about which thread has a permit of the lock, any thread can release the lock
+- The lock object has 2 states: "locked" and "unlocked".
+- The lock object is in the "unlocked" state when it is created
+- The lock object has only 3 methods: acquire(), release(), locked() 
