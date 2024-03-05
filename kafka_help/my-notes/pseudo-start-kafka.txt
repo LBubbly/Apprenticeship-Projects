@@ -1,0 +1,87 @@
+_____________________________________________
+EACH IN SEPARATE COMMAND WINDOWS...
+
+
+1. Start Zookeeper (Find Port # | localhost)
+	-> kafka
+	-> bin/zookeeper-server-start.sh
+	-> config/zookeeper.properties
+
+
+2. Start Kafka Server (ZooKeeper is Running, Observe logs & brokerId=#)
+	-> kafka
+	-> bin/zookeeper-server-start.sh
+	-> config/zookeeper.properties
+
+	
+3. Kafka Cluster 
+	-> Zookeeper localhost: 2181
+	-> Kafka server(broker) localhost: 9092
+
+
+4.1. Start Kafka Topic
+	-> kafka
+	-> bin/kafka-topics.sh
+		->> --create
+		->> --bootstrap-server
+		->> localhost:9092
+		->> --topic topicname
+4.2. Start Kafka Topic (Another way)
+	-> kafka
+	-> bin/kafka-topics.sh
+		->> --create
+		->> --zookeeper
+		->> localhost:2181
+		->> --topic topicname
+
+
+5. Kafka Topic: Other Commands
+	-> kafka
+	-> bin/kafka-topics.sh
+		->> --list
+		->> --describe (.z .lh) --topic
+	-> --zookeeper
+	-> localhost:2181
+	-> topicname
+
+
+6. Start Kafka Producer
+	-> kafka
+	-> bin/kafka-console-producer.sh
+	-> --broker-list
+	-> localhost:9092
+	-> --topic topicname
+	-> Enter Messages...
+
+
+7. Start Kafka Consumer
+	-> kafka
+	-> bin/kafka-console-consumer.sh
+	-> bootstrap-server
+	-> localhost:9092
+	-> --topic topicname
+	-> More Options:
+		->> --from_beginning
+
+
+8.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

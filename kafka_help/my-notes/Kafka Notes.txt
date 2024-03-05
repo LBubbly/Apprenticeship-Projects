@@ -1,0 +1,97 @@
+PUB/SUB -> YouTube
+
+Broker Many to Many
+Broker Cluster 
+
+Mirroring /w Many Kafka Clusters
+
+Zookeeper: 
+- Maintains list of active brokers
+- Elects controller
+- Manages configuration of the topics and partitions
+Zookeeper Cluster (Ensemble):
+- Quorum = #
+-It is recommended to have odd numver of servers in the Zookeeper ensemble like 1, 3, 5, 7, etc and quorum set to (n+1)/2 where n is the quantity of Zookeeper servers
+
+Default Ports: (Adjust port per number of servers)
+- Zookeeper localhost:2181
+- Kafka Broker localhost:9092 (Not Accessible To Public...)
+
+Topics
+- Receive and append messages
+- Unique name
+
+Message Structure
+- Timestamp
+- Offset Number (Unique Across Partition)
+- Key (Optional, Direct to specific partition)
+- Value (Sequence of bytes)
+
+Topics & Partition:
+- Broker (Topic A - Partition 0, B - Partition 0)
+- Broker2 (Topic A - Partition 1, B - Partition 0, C - Partition 0)
+- Broker3 (Topic B - Partition 2, Topic D - Partition 0, Topic D - Partition 1)
+
+Partition Leader & Followers
+- Partition Leader handles partition read/write operations
+- Handles Replication & Fault Tolerance
+- Default Replication Factor: 1 (Recommended no more than 3)
+
+One of the brokers serves as the controller, which is responsible for managing the states of partitions and replicas and for performing administrative tasks like reassigning partition. (When one fails another is elected)
+
+
+To access a particular offset you need to specify the partition
+
+For multiple brokers you need multiple properties files 
+-> COPY PASTE FROM server.properties AND RENAME server0.properties, server1.properties, server2.properties
+-> broker.id=0, broker.id=1...
+-> listeners=PLAINTEXT://:9092, Listeners=PLAINTEXT://:9093...
+-> log.dirs=/tmp/kafka-logs-0, log.dirs=/tmp/kafka-logs-1...
+
+-> LAUNCH EACH BROKER IN A SEPARATE SERVER
+-> PSEUDO CMD:
+	- bin/kafka-topics.sh --bootstrap-server localhost:9092,localhost:9093,localhost:9094 --create --replication-factor 1 --partitions 5 --topic topicname
+ 
+...
+
+BUILD FAULT TOLERANCE
+
+- Replication 3 is enough
+- Partitions stays odd, like 7
+- Isr: In Sync Replicas
+
+...
+
+--bootstrap-server
+--topic name
+--partition #
+--offset #
+
+...
+
+If quantity of the consumers in the consumer group is larger than the quantity of the partitions then some of the consumers will be idle and will not receive any messages
+-> Example: If there are 3 partitions in the topic and 100 consumers in the group then 97 consumers will be idle and only 3 of 100 will be assigned to partitions
+
+LAG will be non-zero if CURRENT-OFFSET is less than LOG-END-OFFSET
+or in other words "Consumer has not yetconsumed all messages in the partition"
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

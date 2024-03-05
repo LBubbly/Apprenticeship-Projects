@@ -1,0 +1,30 @@
+Commands:
+-----------------------------------------------------
+Run these commands from root folder .
+Run zookeeper:
+.\bin\windows\zookeeper-server-start.bat .\config\zookeeper.properties
+
+Run Kafka server
+.\bin\windows\kafka-server-start.bat .\config\server.properties
+
+------------------------------------------------------
+
+Create a topic:
+.\bin\windows\kafka-topics.bat --create --topic weather_api --bootstrap-server localhost:9092 --partitions 5
+
+Delete a topic:
+.\bin\windows\kafka-topics.bat --delete --topic weather_api --bootstrap-server localhost:9092 
+
+Describe a topic:
+.\bin\windows\kafka-topics.bat --describe --topic weather_api --bootstrap-server localhost:9092 
+
+Check all topics:
+.\bin\windows\kafka-topics.bat --bootstrap-server localhost:9092 --list
+
+-----------------------------------------------------
+
+Run Producer:
+.\bin\windows\kafka-console-producer.bat --topic quickstart-events --bootstrap-server localhost:9092
+
+Run Consumer:
+.\bin\windows\kafka-console-consumer.bat --topic quickstart-events --from-beginning --bootstrap-server localhost:9092
