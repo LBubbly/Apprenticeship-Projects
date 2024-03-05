@@ -1,0 +1,13 @@
+# List Comprehension
+flat_m = [ el for row in matrix for el in row ]
+
+# For Loop
+f_flat = []
+for row in matrix:
+    for el in row:
+        f_flat.append(el)
+
+
+print(flat_m,     # [10, 20, 30, 40, 50, 60, 70, 80, 90]
+      f_flat,     # [10, 20, 30, 40, 50, 60, 70, 80, 90]
+      sep='\n')
