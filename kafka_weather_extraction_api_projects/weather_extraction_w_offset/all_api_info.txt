@@ -1,0 +1,41 @@
+{
+    "location": {
+        "name": "Halifax",
+        "region": "Nova Scotia",
+        "country": "Canada",
+        "lat": 44.65,
+        "lon": -63.6,
+        "tz_id": "America/Halifax",
+        "localtime_epoch": 1687387116,
+        "localtime": "2023-06-21 19:38"
+    },
+    "current": {
+        "last_updated_epoch": 1687386600,
+        "last_updated": "2023-06-21 19:30",
+        "temp_c": 18.3,
+        "temp_f": 64.9,
+        "is_day": 1,
+        "condition": {
+            "text": "Sunny",
+            "icon": "//cdn.weatherapi.com/weather/64x64/day/113.png",
+            "code": 1000
+        },
+        "wind_mph": 11.9,
+        "wind_kph": 19.1,
+        "wind_degree": 230,
+        "wind_dir": "SW",
+        "pressure_mb": 1024.0,
+        "pressure_in": 30.24,
+        "precip_mm": 0.0,
+        "precip_in": 0.0,
+        "humidity": 49,
+        "cloud": 0,
+        "feelslike_c": 18.3,
+        "feelslike_f": 64.9,
+        "vis_km": 10.0,
+        "vis_miles": 6.0,
+        "uv": 6.0,
+        "gust_mph": 10.1,
+        "gust_kph": 16.2
+    }
+}
