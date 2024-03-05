@@ -1,0 +1,42 @@
+[
+    {
+        "dept_id": "DEP1",
+        "dept_name": "Research and Development"
+    },
+    {
+        "dept_id": "DEP2",
+        "dept_name": "IT"
+    },
+    {
+        "dept_id": "DEP3",
+        "dept_name": "Customer Service"
+    },
+    {
+        "dept_id": "DEP4",
+        "dept_name": "Product Management"
+    },
+    {
+        "dept_id": "DEP5",
+        "dept_name": "Operations"
+    },
+    {
+        "dept_id": "DEP6",
+        "dept_name": "Human Resources"
+    },
+    {
+        "dept_id": "DEP7",
+        "dept_name": "Finance"
+    },
+    {
+        "dept_id": "DEP8",
+        "dept_name": "Sales"
+    },
+    {
+        "dept_id": "DEP9",
+        "dept_name": "Marketing"
+    },
+    {
+        "dept_id": "DEP10",
+        "dept_name": "Legal"
+    }
+]

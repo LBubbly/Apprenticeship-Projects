@@ -1,0 +1,35 @@
+[
+    {
+        "emp_id": "Z1",
+        "first_name": "Fpvmmk",
+        "last_name": "Gmtnhp",
+        "age": 46,
+        "birth_date": "1977-10-05",
+        "join_date": "2005-05-18",
+        "salary": 34155,
+        "manager": "Kcqr",
+        "department": "It"
+    },
+    {
+        "emp_id": "F2",
+        "first_name": "Wqlnv",
+        "last_name": "Yrkc",
+        "age": 45,
+        "birth_date": "1978-11-16",
+        "join_date": "2016-04-14",
+        "salary": 66498,
+        "manager": "Jzfvg",
+        "department": "Marketing"
+    },
+    {
+        "emp_id": "O3",
+        "first_name": "Hvxrd",
+        "last_name": "Blbsf",
+        "age": 31,
+        "birth_date": "1992-06-23",
+        "join_date": "2021-03-25",
+        "salary": 33795,
+        "manager": "Nsiv",
+        "department": "Operations"
+    }
+]

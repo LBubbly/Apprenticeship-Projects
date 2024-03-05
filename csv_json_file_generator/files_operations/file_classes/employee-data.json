@@ -1,0 +1,57 @@
+[
+    {
+        "emp_id": "P1",
+        "first_name": "Ckul",
+        "last_name": "Nldpmm",
+        "age": 41,
+        "birth_date": "1982-02-07",
+        "join_date": "2022-05-29",
+        "salary": 45079,
+        "manager": "Fym",
+        "department": "Customer Service"
+    },
+    {
+        "emp_id": "F2",
+        "first_name": "Reecch",
+        "last_name": "Fqusf",
+        "age": 48,
+        "birth_date": "1975-05-10",
+        "join_date": "2022-04-04",
+        "salary": 82856,
+        "manager": "Ztj",
+        "department": "Product Management"
+    },
+    {
+        "emp_id": "R3",
+        "first_name": "Zygqaa",
+        "last_name": "Mpqr",
+        "age": 42,
+        "birth_date": "1981-05-06",
+        "join_date": "2008-11-24",
+        "salary": 39272,
+        "manager": "Rcqjpy",
+        "department": "It"
+    },
+    {
+        "emp_id": "G4",
+        "first_name": "Uzty",
+        "last_name": "Vevim",
+        "age": 28,
+        "birth_date": "1995-02-02",
+        "join_date": "2017-07-16",
+        "salary": 30753,
+        "manager": "Nugs",
+        "department": "Human Resources"
+    },
+    {
+        "emp_id": "C5",
+        "first_name": "Gmtnwu",
+        "last_name": "Evlh",
+        "age": 49,
+        "birth_date": "1974-03-25",
+        "join_date": "2011-06-14",
+        "salary": 67855,
+        "manager": "Yaaygt",
+        "department": "Operations"
+    }
+]
