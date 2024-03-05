@@ -1,0 +1,95 @@
+_________________________________________________
+access_properties.py
+AccessProperties(2)
+    access_displays(self, property_to_access)
+    access_pg_sql_file(self, property_to_access)
+
+
+_________________________________________________
+logger_class.py
+Logger(5)
+    debug(self, message)
+    info(self, message)
+    warning(self, message)
+    error(self, message)
+    critical(self, message)
+
+
+_________________________________________________
+csv_operations.py
+CSVOperations_Gen(3)
+    generate_emps_to_csv(self, employees_list)
+    generate_depts_to_csv(self, departments_list)
+    generate_to_csv(self, choice, number_of_objects=50)
+
+
+_________________________________________________
+json_operations.py
+JSONOperations_Gen(3)
+    generate_emps_to_json(self, employees_list)
+    generate_depts_to_json(self, department_list)
+    generate_to_json(self, selected_data_type, number_of_objects=0)
+
+
+_________________________________________________
+department_class.py
+Department()
+
+
+_________________________________________________
+employees_class.py
+Employee()
+
+
+_________________________________________________
+generators_class.py
+Generators(10)
+    id_generator(self, number_of_rows)
+    name_generator(self)
+    salary_generator(self)
+    department_generator(self)
+    age_generator(self)
+    date_generator(self, year)
+    birth_date_generator(self, age)
+    join_date_generator(self, birth_date)
+    employee_object_generator(self, number_of_objects, employees_list=[], specified_class=Employee)
+    department_object_generator(self, dept_list=[], specified_class=Department)
+
+
+_________________________________________________
+generator_program.py
+GeneratorProgram(4)
+    csv_or_json_display(self)
+    emp_or_dept_display(self)
+    select_total_object_number(self)
+    generator_selector(self, selected_file_format, selected_data_type)
+
+
+_________________________________________________
+etl_program.py
+ETLProgram(3)
+    etl_csv_or_json_display(self)
+    etl_emp_or_dept_display(self)
+    etl_selector(self, selected_file_format, selected_data_type)
+
+
+_________________________________________________
+to_postgres_class.py
+ToPostgres(2)
+    csv_to_postgres(self, type_of_data)
+    json_to_postgres(self, type_of_data)
+
+
+_________________________________________________
+pandas_program.py
+PandasProgram(Currently=1)
+    pd_assignment()
+
+
+_________________________________________________
+project_program.py
+ProjectProgram(4)
+    wk1_data_generator(self)    
+    wk2_load_to_postgres(self)
+    wk3_pandas_assignment(self)
+    project_selection(self)
