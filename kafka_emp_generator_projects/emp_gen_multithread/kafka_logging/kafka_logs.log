@@ -1,0 +1,94 @@
+2023-06-09 09:50:20,466 INFO: Started Execution: json_to_postgres (Class: ToPostgres)
+2023-06-09 09:50:20,466 INFO: Started Execution: access_kafka_config (Class: AccessKafka, Property Accessed: pg_host_name)
+2023-06-09 09:50:20,476 INFO: Finished Execution: access_kafka_config
+2023-06-09 09:50:20,476 INFO: Started Execution: access_kafka_config (Class: AccessKafka, Property Accessed: pg_port)
+2023-06-09 09:50:20,477 INFO: Finished Execution: access_kafka_config
+2023-06-09 09:50:20,477 INFO: Started Execution: access_kafka_config (Class: AccessKafka, Property Accessed: pg_database)
+2023-06-09 09:50:20,479 INFO: Finished Execution: access_kafka_config
+2023-06-09 09:50:20,479 INFO: Started Execution: access_kafka_config (Class: AccessKafka, Property Accessed: pg_username)
+2023-06-09 09:50:20,480 INFO: Finished Execution: access_kafka_config
+2023-06-09 09:50:20,481 INFO: Started Execution: access_kafka_config (Class: AccessKafka, Property Accessed: pg_password)
+2023-06-09 09:50:20,482 INFO: Finished Execution: access_kafka_config
+2023-06-09 09:50:21,100 INFO: Started Execution: access_kafka_config (Class: AccessKafka, Property Accessed: emp_table_name)
+2023-06-09 09:50:21,102 INFO: Finished Execution: access_kafka_config
+2023-06-09 09:50:21,103 INFO: Started Execution: access_kafka_config (Class: AccessKafka, Property Accessed: create_emp_table_query)
+2023-06-09 09:50:21,104 INFO: Finished Execution: access_kafka_config
+2023-06-09 09:50:21,214 INFO: Finished Execution: json_to_postgres
+2023-06-09 10:00:27,432 INFO: Started Execution: access_kafka_config (Class: AccessKafka, Property Accessed: topic_name)
+2023-06-09 10:00:27,444 INFO: Finished Execution: access_kafka_config
+2023-06-09 10:00:27,444 INFO: Started Execution: access_kafka_config (Class: AccessKafka, Property Accessed: server)
+2023-06-09 10:00:27,446 INFO: Finished Execution: access_kafka_config
+2023-06-09 10:00:27,458 INFO: Started Execution: access_kafka_config (Class: AccessKafka, Property Accessed: topic_name)
+2023-06-09 10:00:27,461 INFO: Finished Execution: access_kafka_config
+2023-06-09 10:00:27,461 INFO: Started Execution: access_kafka_config (Class: AccessKafka, Property Accessed: server)
+2023-06-09 10:00:27,463 INFO: Finished Execution: access_kafka_config
+2023-06-09 10:00:27,463 INFO: Started Execution: access_kafka_config (Class: AccessKafka, Property Accessed: consumer_group)
+2023-06-09 10:00:27,466 INFO: Finished Execution: access_kafka_config
+2023-06-09 10:00:27,466 INFO: Started Execution of kafka_program
+2023-06-09 10:00:36,002 INFO: Started Execution of producing_threads
+2023-06-09 10:00:36,003 INFO: Started Execution of produce
+2023-06-09 10:00:36,007 INFO: Started Execution of produce
+2023-06-09 10:00:36,156 INFO: Finished Execution of generate
+2023-06-09 10:00:36,157 INFO: Finished Execution of generate
+2023-06-09 10:00:36,157 INFO: Started Execution of letter
+2023-06-09 10:00:36,157 INFO: Started Execution of letter
+2023-06-09 10:00:36,157 INFO: Finished Execution of letter
+2023-06-09 10:00:36,158 INFO: Finished Execution of letter
+2023-06-09 10:00:36,158 INFO: Started Execution of letter
+2023-06-09 10:00:36,158 INFO: Started Execution of letter
+2023-06-09 10:00:36,158 INFO: Finished Execution of letter
+2023-06-09 10:00:36,160 INFO: Finished Execution of letter
+2023-06-09 10:00:36,160 INFO: Started Execution of name
+2023-06-09 10:00:36,160 INFO: Started Execution of name
+2023-06-09 10:00:36,160 INFO: Finished Execution of name
+2023-06-09 10:00:36,160 INFO: Finished Execution of name
+2023-06-09 10:00:36,160 INFO: Started Execution of name
+2023-06-09 10:00:36,160 INFO: Started Execution of name
+2023-06-09 10:00:36,161 INFO: Finished Execution of name
+2023-06-09 10:00:36,161 INFO: Finished Execution of name
+2023-06-09 10:00:36,161 INFO: Finished Execution of generate
+2023-06-09 10:00:36,161 INFO: Finished Execution of generate
+2023-06-09 10:00:36,163 INFO: Finished Execution of generate
+2023-06-09 10:00:36,163 INFO: Started Execution of letter
+2023-06-09 10:00:36,163 INFO: Finished Execution of letter
+2023-06-09 10:00:36,163 INFO: Finished Execution of generate
+2023-06-09 10:00:36,164 INFO: Started Execution of letter
+2023-06-09 10:00:36,164 INFO: Started Execution of letter
+2023-06-09 10:00:36,164 INFO: Finished Execution of letter
+2023-06-09 10:00:36,165 INFO: Finished Execution of letter
+2023-06-09 10:00:36,165 INFO: Started Execution of name
+2023-06-09 10:00:36,165 INFO: Started Execution of letter
+2023-06-09 10:00:36,165 INFO: Finished Execution of name
+2023-06-09 10:00:36,166 INFO: Finished Execution of letter
+2023-06-09 10:00:36,166 INFO: Started Execution of name
+2023-06-09 10:00:36,167 INFO: Started Execution of name
+2023-06-09 10:00:36,167 INFO: Finished Execution of name
+2023-06-09 10:00:36,168 INFO: Finished Execution of name
+2023-06-09 10:00:36,168 INFO: Finished Execution of generate
+2023-06-09 10:00:36,168 INFO: Started Execution of name
+2023-06-09 10:00:36,169 INFO: Finished Execution of name
+2023-06-09 10:00:36,170 INFO: Finished Execution of generate
+2023-06-09 10:00:36,171 INFO: Finished Execution of generate
+2023-06-09 10:00:36,172 INFO: Started Execution of letter
+2023-06-09 10:00:36,173 INFO: Finished Execution of letter
+2023-06-09 10:00:36,173 INFO: Started Execution of letter
+2023-06-09 10:00:36,173 INFO: Finished Execution of letter
+2023-06-09 10:00:36,173 INFO: Started Execution of name
+2023-06-09 10:00:36,173 INFO: Finished Execution of name
+2023-06-09 10:00:36,174 INFO: Finished Execution of generate
+2023-06-09 10:00:36,174 INFO: Started Execution of name
+2023-06-09 10:00:36,174 INFO: Started Execution of letter
+2023-06-09 10:00:36,175 INFO: Finished Execution of name
+2023-06-09 10:00:36,175 INFO: Finished Execution of letter
+2023-06-09 10:00:36,176 INFO: Finished Execution of generate
+2023-06-09 10:00:36,176 INFO: Started Execution of letter
+2023-06-09 10:00:36,176 INFO: Finished Execution of letter
+2023-06-09 10:00:36,176 INFO: Started Execution of name
+2023-06-09 10:00:36,176 INFO: Finished Execution of name
+2023-06-09 10:00:36,177 INFO: Started Execution of name
+2023-06-09 10:00:36,177 INFO: Finished Execution of name
+2023-06-09 10:00:36,177 INFO: Finished Execution of generate
+2023-06-09 10:00:56,187 INFO: Finished Execution of produce
+2023-06-09 10:00:56,189 INFO: Finished Execution of produce
+2023-06-09 10:00:56,191 INFO: Finished Execution of producing_threads
+2023-06-09 10:00:56,191 INFO: Started Execution of consume
