@@ -1,0 +1,445 @@
+class Employee:
+    def __init__(self, employee_id, employee_name, department_name, manager, phone_number):
+        self.employee_id = employee_id,
+        self.employee_name = employee_name
+        self.department_name = department['department_name']
+        self.manager = department['manager']
+        self.phone_number = department['phone number']
+
+    def emp_dict(self, employee_id, employee_name, department_name, manager, phone_number):
+        return {
+            
+        }
+...
+
+
+    '''ne_obj = Employee(new_id, new_name, [dep_name, manager_name, ph_num])
+    ne_obj.employee_id = new_id
+    ne_obj.employee_name = new_name
+    ne_obj.department.department_name = dep_name
+    ne_obj.department.manager = manager_name
+    ne_obj.department.phone_number = ph_num
+    
+
+...
+
+    id_criteria = input('Employee ID Criteria: ')
+    
+    
+    id_list = []
+    with open('employee-data.json', 'r') as j_file:
+        id_data = json.loads(j_file.read())
+        for id in id_data: 
+            id_list.append(id['id'])
+    
+    idc_list = list(filter(lambda id: id_criteria in id, id_list))
+    
+    
+    #print('ID:', id_list)
+    print('IDC:', idc_list)
+    print('Criteria:', id_criteria)
+    
+    
+    full_id = input('Please enter the full id: ')
+    
+    
+    target_dict = None
+    for em in id_data:
+        if em['id'] == full_id.upper():
+            target_dict = em
+            break
+    
+    print('Target Dict:', target_dict)
+    
+    
+    with open('employee-data.json', 'r') as json_file:
+        d_data = json.loads(json_file.read())
+        print('D Data: ', d_data)
+        for d in d_data:
+            sh_copy = d.copy()
+            print('Sh C 1', sh_copy)
+            if sh_copy['id'] == full_id.upper():
+                sh_copy['department']['manager'] = 'New Guy'
+                print('Sh C 2', sh_copy)
+    print('Sh C 2', sh_copy)
+    
+    updated = json.dumps(sh_copy)
+    print(updated)
+    
+    with open('employee-data.json', 'w') as json_f:
+        json.dump(sh_copy, json_f)
+    
+    '''j_obj = json.loads(target_dict)
+    print(j_obj)
+    j_obj['department']['department_name'] = 'IT WORKS!!'
+    
+    print('Worked?', j_obj)
+    
+    uj_obj = json.dumps(j_obj)
+    print('I am UJ_OBJ:', uj_obj)
+    '''#d_target = target_dict['department']['department_name'] 
+    #print(d_target)
+    
+    #target_dict['department']['department_name'] = 'YAYY'
+    #print(target_dict)
+    
+    
+    #target_updated = json.dumps(target_dict)
+    #print(target_updated)
+    #with open('employee-data.json', 'w') as j_file:
+    #    json.dump(id_target, j_file)
+    
+    '''
+    print('What would you like to update?',
+          '1. Department Name',
+          '2. Manager',
+          '3. Phone Number\n',
+          sep='\n')
+
+    update_choice = int(input('Choose [1|2|3]: '))
+    update_change = input('Update Change: ')
+    
+    
+    match update_choice:
+        case 1:
+            pass
+        case 2:
+            pass
+        case 3:
+            pass
+        case default:
+            # Break up your code... 
+            pass'''
+
+ +++++++++++++++++++++++++++++++++
+    # Enter Employee Id Criteria 
+    # Type the full id
+    full_id = input('Please type the full employee id: ')
+    data = json.loads()
+    # Use id to target full object 
+    target_value = full_id
+    # What would you like to change? [1|2|3]
+    
+    
+    # match-case: Dep Name, Manager, Phone Num 
+    # update_change = input(Update Change: )
+    # print('Your Change:', update_change)
+    # Are you sure?
+    # match-case: EG yes -> dep_name = update change, no -> menu_return()
+    # json.dump
+    # do_again
+    
+
+########
+    print('Did more than one item appear ',
+          '1. Yes',
+          '2. No',
+          sep='\n')
+    
+    print('If more than one item appeared in the list, please ')
+    
+    
+    print('What would you like to update?',
+          '1. Department Name',
+          '2. Manager',
+          '3. Phone Number\n',
+          sep='\n')
+
+    update_choice = int(input('Choose [1|2|3]: '))
+    print('Update Choice: ', update_choice)
+
+    update_change = input('Change to: ')
+    print('Update Change: ', update_change)
+    
+    # update the information ... this is something to google...
+    
+    # Another Function... update_again()
+        # "Would you like to make another update? [1|2] "
+            # Yes -> update()
+            # No -> menu_return()
+            # Invalid entry -> update_again
+    
+    
+    do_again('update')
+
+
+    print(ne_obj,
+          ne_obj.__name__)'''
+
+...
+
+
+    '''new_id = input('Employee ID: ')
+    new_name = input('Employee Name: ')
+    dep_name = input('Department Name: ')
+    manager_name = input('Manager Name: ')
+    ph_num = input('Phone Number: ')
+    '''
+
+...
+
+with open('employee-data.json', 'r') as ed:
+    r_data = json.load(ed)
+
+test = r_data
+#print(test)
+
+ph_regex = []
+
+
+...
+
+    v_list = []
+    for item in emp_data:
+        for key, value in item.items():
+            if value == value:
+                v_list.append(item)
+    
+    
+    rv_list = []
+    for item in emp_data:
+        if key in item and item[key] == value:
+            rv_list.append(item)
+
+...
+
+with open('employee-data.json', 'r') as j_file:
+        emp_data = json.loads(j_file)
+    print(emp_data)
+    
+
+... 
+
+
+    print('\nSpecify by:',
+          '1. Employee Name',
+          '2. Department Name',
+          '3. Manager',
+          '4. Phone Number',
+          sep='\n')
+    
+    specify_by = int(input('Choose [1|2|3|4]: '))
+...
+
+   '''match search_by:
+        case 1:
+            system('cls')
+            print('Employee Id')
+        case 2:
+            system('cls')
+            print('Department Name')
+        case 3:
+            system('cls')
+            print('Manager')
+        case default:
+            system('cls')
+            print('INVALID INPUT.')
+            search()'''
+
+..
+
+    d_name = []
+    for dd in d_list:
+        d_name.append(dd['department_name'])
+
+...
+
+
+    '''key = 'department["phone number"]'
+    value = 'phone number'
+    
+    ss_list = []
+    for item in dep_data:
+        if key in item:
+            ss_list.append(item[key])
+    
+    #sc_list = list(filter(lambda item: key in item, ss_list))
+    
+    print(ss_list)
+    
+    print('Selected Search:', key)
+    print('Search Criteria:', value)
+
+    
+    
+    rv_list = []
+    for item in dep_data:
+        if key in item:
+            rv_list.append(item)
+    
+    print(rv_list)'''
+
+
+...
+
+
+    d_name = []
+    for dn in d_list:
+        d_name.append(dn['department_name'])
+
+    managers = []
+    for m in d_list:
+        managers.append(m['manager'])
+
+    pn_list = []
+    for pn in d_list:
+        pn_list.append(pn['phone number'])
+
+
+...
+
+
+def read_json():
+    with open('employee-data.json', 'r') as j_file:
+        emp_data = json.load(j_file)
+    
+    key = 'employee_name'
+    value = 'A'
+    
+    r_list = []
+    for item in emp_data:
+        if key in item:
+            r_list.append(item[key])
+            
+    l_list = []
+    for item in emp_data:
+        if key in item:
+            l_list.append(item[key])
+    
+    f_r = filter(lambda x: value in x, l_list)
+    
+    print(list(f_r))
+    
+    '''print('L List: ')
+    for l in r_list:
+        print(l)
+    '''
+    '''test = emp_data[-1]['department']
+    test_len = len(emp_data)
+    print(test)
+    print(test_len)
+    '''
+#read_json()
+
+...
+{"id": "testid123", "employee_name": "Test Name", "department": {"department_name": "Test Department Name", "manager": "Manager Name", "phone number": "Test Num 123"}}
+{"id": "secondtest456", "employee_name": "Second Test Name", "department": {"department_name": "Second Dep Name", "manager": "Second Manager", "phone number": "Ph Num 456"}}
+
+...
+
+
+    
+    id_criteria = input('Employee ID Criteria: ')
+    
+    
+    id_list = []
+    with open('employee-data.json', 'r') as j_file:
+        id_data = json.loads(j_file.read())
+        for id in id_data: 
+            id_list.append(id['id'])
+    
+    idc_list = list(filter(lambda id: id_criteria in id, id_list))
+    
+    
+    #print('ID:', id_list)
+    print('IDC:', idc_list)
+    print('Criteria:', id_criteria)
+    
+    
+    full_id = input('Please enter the full id: ')
+    
+    
+    target_dict = None
+    for em in id_data:
+        if em['id'] == full_id.upper():
+            target_dict = em
+            break
+    
+    print('Target Dict:', target_dict)
+    
+    
+    with open('employee-data.json', 'r') as json_file:
+        d_data = json.loads(json_file.read())
+        print('D Data: ', d_data)
+        for d in d_data:
+            sh_copy = d.copy()
+            print('Sh C 1', sh_copy)
+            if sh_copy['id'] == full_id.upper():
+                sh_copy['department']['manager'] = 'New Guy'
+                print('Sh C 2', sh_copy)
+    print('Sh C 2', sh_copy)
+    
+    updated = json.dumps(sh_copy)
+    print(updated)
+    
+    with open('employee-data.json', 'w') as json_f:
+        json.dump(sh_copy, json_f)
+
+
+....
+
+
+'''# Turn this into a update_now(update_choice, update_change) for match-case
+    with open('employee-data.json', 'r') as j_file:
+        d_data = json.loads(j_file.read())
+        print('D Data: ', d_data)
+        for d in d_data:
+            sh_copy = d.copy()
+            print('Sh C 1', sh_copy)
+            if sh_copy['id'] == full_id.upper():
+                sh_copy['department']['manager'] = 'New Gal2'
+                print('Sh C 2', sh_copy)
+    print('Sh C 2', sh_copy)
+    
+    
+    with open('employee-data.json', 'w') as j_file:
+        json.dump(d_data, j_file, indent=4)
+    # All the way to here...'''
+    
+   
+
+...
+
+'''
+    print('What would you like to update?',
+          '1. Department Name',
+          '2. Manager',
+          '3. Phone Number\n',
+          sep='\n')
+
+    update_choice = int(input('Choose [1|2|3]: '))
+    update_change = input('Update Change: ')
+    
+    print('Your Update Choice:', update_choice)
+    print('Your Update Change:', update_change)
+    
+    print('Are you sure?',
+          '1. Yes',
+          '2. No',
+          sep='\n')
+    
+    y_or_n = int(input('Select [1|2]: '))
+    print(y_or_n)
+    
+    
+    match y_or_n:
+        case 1:
+            
+            match update_choice:    
+                case 1: 
+                    update_now(full_id, 'department_name', update_change)
+                case 2: 
+                    update_now(full_id, 'manager', update_change)
+                case 3: 
+                    update_now(full_id, 'phone number', update_change)
+                case default:
+                    # Break up your code... 
+                    pass
+                
+        case 2:
+            pass
+        
+        case default:
+            print('INVALID INPUT')
+    '''
+    
